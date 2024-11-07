@@ -5,7 +5,6 @@ int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(NULL);
-
     long long t;
     cin >> t;
     while (t--)
@@ -21,7 +20,6 @@ int main()
         }
         sort(v.begin(), v.end());
         v.push_back(1e9 + 5);
-
         long long p = v[0];
         long long cur = 1;
         long long ans = 0;
@@ -53,9 +51,7 @@ int main()
             }
             p = v[x];
         }
-
         cout << ans <<endl;
     }
-
     return 0;
 }
