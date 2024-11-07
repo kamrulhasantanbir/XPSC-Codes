@@ -20,7 +20,7 @@ int main()
             v.push_back(num);
         }
         sort(v.begin(), v.end());
-        v.push_back(1e9 + 1);
+        v.push_back(1e9 + 5);
 
         long long p = v[0];
         long long cur = 1;
