@@ -1,4 +1,5 @@
 
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -17,18 +18,18 @@ int main() {
         string c;
         cin >> c;
 
-        vector<long long int> d(b, 0);
+        vector<int> d(b, 0);
         long long int e = 0;
 
         for (int f = 0; f < b; f++) {
-            long long int g;
+            int g;
             if (c[f] == 'L') {
                 g = f;
             } else {
                 g = b - f - 1;
             }
 
-            long long int h;
+            int h;
             if (f > (b - f - 1)) {
                 h = f;
             } else {
@@ -36,7 +37,7 @@ int main() {
             }
 
             e += g;
-            long long int i = h - g;
+            int i = h - g;
             d[f] = i;
         }
 
